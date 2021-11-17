@@ -3,7 +3,7 @@ import WorkList from "../components/WorkList/index";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <Header />
       <hr />
       <WorkList />

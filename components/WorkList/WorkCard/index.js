@@ -3,7 +3,7 @@ import React from "react";
 
 import styles from "./WorkCard.module.css";
 
-const bgColors = ["#4A2BAF", "#0F61C0", "#9E2B79", "#4146B5"];
+const bgColors = ["#9cabcc", "#3189c7", "#9cbebe", "#abb4a8"];
 
 const WorkCard = (props) => {
   const {
