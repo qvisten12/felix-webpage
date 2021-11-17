@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div
       className="flex flex-col justify-center md:flex-row
-        mt-56 container max-w-5xl mx-auto px-10 mb-24"
+      mt-32 md:mt-56 container max-w-5xl mx-auto px-10 mb-24"
     >
       <div className="flex flex-col flex-1 mb-10 md:mb-0">
         <h1 className="text-5xl font-extrabold mb-5">Hi, I'm Felix,</h1>

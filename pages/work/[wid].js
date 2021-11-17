@@ -25,7 +25,7 @@ const Post = ({ works }) => {
   return (
     <div
       className="flex flex-col justify-center md:flex-row
-        mt-40 container max-w-5xl mx-auto px-10 mb-24"
+      mt-28  md:mt-40 container max-w-5xl mx-auto px-10 mb-24"
     >
       {loading ? (
         "loading..."

@@ -36,7 +36,7 @@ const Navbar = () => {
         transition: "top 0.6s",
       }}
       ref={navRef}
-      className="flex pt-6 pb-6 md:px-10 justify-between fixed top-0 w-screen z-40 bg-white opacity-90"
+      className="flex pt-6 pb-6 md:px-10 items-center justify-between fixed top-0 w-screen z-40 bg-white opacity-90"
     >
       <Link href="/">
         <a className="font-black text-2xl ml-5 text-gray-800">
