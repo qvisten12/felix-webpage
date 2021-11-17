@@ -45,8 +45,8 @@ const Post = ({ works }) => {
                   href={work.data.link}
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="text-blue-500 font-bold text-lg cursor-pointer
-                hover:text-blue-300 w-36"
+                  className="text-blue-500 font-bold text-xl cursor-pointer
+                hover:text-blue-300 w-38"
                 >
                   Visit website{" "}
                   <BsArrowRight size={24} className="inline-block" />
@@ -55,10 +55,11 @@ const Post = ({ works }) => {
                   href={work.data.codelink}
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="text-blue-500 font-bold text-lg cursor-pointer
+                  className="text-blue-500 font-bold text-xl cursor-pointer
                 hover:text-blue-300 w-24"
                 >
-                  Code <BsArrowRight size={24} className="inline-block" />
+                  Code{" "}
+                  <BsArrowRight size={24} className="inline-block hover:" />
                 </a>
               </div>
             </div>
