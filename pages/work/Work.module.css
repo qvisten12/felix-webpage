@@ -4,9 +4,10 @@
   cursor: pointer;
   margin-bottom: 24px;
   border-radius: 2%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
 }
 
 .img:hover {
   transform: scale(1.02);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.48);
 }

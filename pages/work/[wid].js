@@ -6,6 +6,7 @@ import styles from "./Work.module.css";
 import { DiReact } from "react-icons/di";
 import { TiHtml5 } from "react-icons/ti";
 import { IoLogoJavascript } from "react-icons/io";
+import { BsArrowRight } from "react-icons/bs";
 
 const Post = ({ works }) => {
   const route = useRouter();
@@ -39,15 +40,27 @@ const Post = ({ works }) => {
               <p className="text-xl font-medium text-gray-600">
                 {work.data.info}
               </p>
-              <a
-                href={work.data.link}
-                rel="noopener noreferrer"
-                target="_blank"
-                className="text-blue-500 font-bold text-lg cursor-pointer
-                hover:text-blue-300 mt-14 w-36"
-              >
-                Visit website {" ->"}
-              </a>
+              <div className="mt-14 flex justify-between">
+                <a
+                  href={work.data.link}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="text-blue-500 font-bold text-lg cursor-pointer
+                hover:text-blue-300 w-36"
+                >
+                  Visit website{" "}
+                  <BsArrowRight size={24} className="inline-block" />
+                </a>
+                <a
+                  href={work.data.codelink}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="text-blue-500 font-bold text-lg cursor-pointer
+                hover:text-blue-300 w-24"
+                >
+                  Code <BsArrowRight size={24} className="inline-block" />
+                </a>
+              </div>
             </div>
 
             <div className="flex flex-col">
@@ -71,7 +84,7 @@ const Post = ({ works }) => {
             </div>
           </div>
 
-          <div className="w-full max-w-7xl">
+          <div className="w-full max-w-7xl ">
             <div className="w-full">
               {work.data.infoImages.map((img, i) => (
                 <div key={i}>

@@ -26,6 +26,7 @@ export const content = {
 
         info: "This app was made using React and uses an API from disease.sh to get covid-19 related information. Each time the app is ran, a fetch of the newest covid-19 information is retrieved from the API. Aswell as when a new country is selected in the drop-down menu.",
         link: "https://covid-tracker-virid.vercel.app",
+        codelink: "https://github.com/qvisten12/covid-tracker",
       },
     },
     {
@@ -49,6 +50,7 @@ export const content = {
         ],
         info: "Due to the increasing popularity of crypto, i made this app using React that gets coin information from rapidAPI. The app displays the current price, marketcaps and changes of several crypto currencies, aswell as trending news and the biggest crypto exchanges.",
         link: "https://crypto-hub-ten.vercel.app",
+        codelink: "https://github.com/qvisten12/crypto-hub",
       },
     },
     {
@@ -72,6 +74,7 @@ export const content = {
         ],
         info: "Made with React and uses commerceJS API to store cart information and stripe to handle checkout and payment.",
         link: "https://web-shop-tau.vercel.app",
+        codelink: "https://github.com/qvisten12/web-shop",
       },
     },
   ],
