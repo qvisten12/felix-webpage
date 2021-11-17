@@ -53,8 +53,10 @@ const Post = ({ works }) => {
             <div className="flex flex-col">
               <div className="flex flex-col mb-10">
                 <p className="text-gray-400 mb-1 text-lg">Services</p>
-                {work.data.services.map((s) => (
-                  <p className="text-gray-600">{s}</p>
+                {work.data.services.map((s, i) => (
+                  <p key={i} className="text-gray-600">
+                    {s}
+                  </p>
                 ))}
               </div>
 
@@ -71,9 +73,9 @@ const Post = ({ works }) => {
 
           <div className="w-full max-w-7xl">
             <div className="w-full">
-              {work.data.infoImages.map((img) => (
-                <div>
-                  <img className={styles.img} src={img} />
+              {work.data.infoImages.map((img, i) => (
+                <div key={i}>
+                  <img className={styles.img} src={img} alt="work" />
                 </div>
               ))}
             </div>

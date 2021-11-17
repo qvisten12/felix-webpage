@@ -21,6 +21,8 @@ const Footer = () => {
           <a
             href="https://twitter.com/felixljungqvis1"
             aria-label="twitter"
+            rel="noopener noreferrer"
+            target="_blank"
             className="text-gray-400 hover:text-gray-600"
           >
             <AiOutlineTwitter size={30} />
@@ -28,6 +30,8 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/in/felix-ljungqvist-422119181/"
             aria-label="linkedin"
+            rel="noopener noreferrer"
+            target="_blank"
             className="text-gray-400 hover:text-gray-600"
           >
             <AiFillLinkedin size={30} />
@@ -35,6 +39,8 @@ const Footer = () => {
           <a
             href="https://github.com/qvisten12"
             aria-label="github"
+            rel="noopener noreferrer"
+            target="_blank"
             className="text-gray-400 hover:text-gray-600"
           >
             <AiFillGithub size={30} />
