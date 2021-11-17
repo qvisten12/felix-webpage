@@ -34,10 +34,7 @@ const Header = () => {
           libraries <span className="text-gray-700 font-bold">React</span> and{" "}
           <span className="text-gray-700 font-bold">Next.js.</span>
         </p>
-        <p className="font-medium text-lg mb-5">
-          I’m also the organizer of React Sweden, a community for React
-          developers in Sweden.
-        </p>
+
         <p className="font-medium text-lg mb-5">
           I am currently studying full time at Borås University in Systems
           Science.

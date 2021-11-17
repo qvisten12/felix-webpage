@@ -16,6 +16,7 @@ export const content = {
           <IoLogoJavascript size={35} />,
           <TiHtml5 size={35} />,
         ],
+        tech2: ["DiReact", "IoLogoJavascript", "TiHtml5"],
         featuredImg: "/images/covid/covid-preview.png",
         infoImages: [
           "/images/covid/covid1.png",
@@ -39,6 +40,7 @@ export const content = {
           <IoLogoJavascript size={35} />,
           <TiHtml5 size={35} />,
         ],
+        tech2: ["DiReact", "IoLogoJavascript", "TiHtml5"],
         featuredImg: "/images/crypto/crypto-preview.png",
         infoImages: [
           "/images/crypto/crypto1.png",
@@ -61,6 +63,7 @@ export const content = {
           <IoLogoJavascript size={35} />,
           <TiHtml5 size={35} />,
         ],
+        tech2: ["DiReact", "IoLogoJavascript", "TiHtml5"],
         featuredImg: "/images/web-shop/web-shop-preview.png",
         infoImages: [
           "/images/web-shop/web-shop3.png",
