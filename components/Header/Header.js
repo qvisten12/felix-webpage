@@ -26,9 +26,9 @@ const Header = () => {
 
       <div className="flex flex-col max-w-lg text-gray-600 ">
         <p className="font-medium text-lg mb-5">
-          I’m an Gothenburg based aspiring Jr. front-end developer and designer.
-          I’m experienced in{" "}
-          <span className="text-gray-700 font-bold">HTML5</span>,
+          I’m a<span className="text-gray-700 font-bold"> Gothenburg</span>{" "}
+          based aspiring Jr. front-end developer and designer. I’m experienced
+          in <span className="text-gray-700 font-bold">HTML5</span>,
           <span className="text-gray-700 font-bold">JS</span> and{" "}
           <span className="text-gray-700 font-bold">CSS3</span> and modern
           libraries <span className="text-gray-700 font-bold">React</span> and{" "}
@@ -36,8 +36,9 @@ const Header = () => {
         </p>
 
         <p className="font-medium text-lg mb-5">
-          I am currently studying full time at Borås University in Systems
-          Science.
+          I am currently studying full time at{" "}
+          <span className="text-gray-700 font-bold">Borås University</span> in
+          <span className="text-gray-700 font-bold"> Systems Science.</span>
         </p>
       </div>
     </div>
