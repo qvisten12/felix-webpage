@@ -13,7 +13,7 @@ const Header = () => {
           <br />
           and tech enthusiast
         </p>
-        <a href="mailto:felixljungqvist@icloud.com">
+        <a href="mailto:felixljungqvist@icloud.com" className="w-32">
           <button
             className="border-blue-500 border-2 w-32 p-2
                     rounded-md text-blue-500 text-2xl font-semibold

@@ -9,11 +9,11 @@ const Footer = () => {
       <hr />
       <div className="flex mt-14 justify-between items-center">
         <Link href="/">
-          <a className="font-extrabold text-2xl ml-5 ">
-            {" <"}
-            {"FL"}
-            <span className="text-blue-500">{"/"}</span>
-            {">"}
+          <a className="font-black text-2xl ml-5 text-gray-800">
+            Felix.
+            <span className=" font-semibold text-xl text-blue-600">
+              Ljungqvist
+            </span>
           </a>
         </Link>
 
