@@ -1,7 +1,10 @@
-import { DiReact } from "react-icons/di";
-import { TiHtml5 } from "react-icons/ti";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiNextdotjs, SiSass } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiSass,
+  SiHtml5,
+  SiJavascript,
+  SiReact,
+} from "react-icons/si";
 
 export const content = {
   works: [
@@ -13,11 +16,11 @@ export const content = {
         date: 2021,
         services: ["Front-end development"],
         tech: [
-          <DiReact size={35} />,
-          <IoLogoJavascript size={35} />,
-          <TiHtml5 size={35} />,
+          <SiReact size={35} />,
+          <SiJavascript size={35} />,
+          <SiHtml5 size={35} />,
         ],
-        tech2: ["DiReact", "IoLogoJavascript", "TiHtml5"],
+        tech2: ["SiReact", "SiJavascript", "SiHtml5"],
         featuredImg: "/images/covid/covid-preview.png",
         infoImages: [
           "/images/covid/covid1.png",
@@ -38,19 +41,13 @@ export const content = {
         date: 2021,
         services: ["Front-end development"],
         tech: [
-          <DiReact size={35} />,
+          <SiReact size={35} />,
           <SiNextdotjs size={35} />,
-          <IoLogoJavascript size={35} />,
-          <TiHtml5 size={35} />,
+          <SiJavascript size={35} />,
+          <SiHtml5 size={35} />,
           <SiSass size={35} />,
         ],
-        tech2: [
-          "DiReact",
-          "SiNextdotjs",
-          "IoLogoJavascript",
-          "TiHtml5",
-          "SiSass",
-        ],
+        tech2: ["SiReact", "SiNextdotjs", "SiJavascript", "SiHtml5", "SiSass"],
         featuredImg: "/images/yutu/yutu-preview.png",
         infoImages: ["/images/yutu/yutu1.png", "/images/yutu/yutu2.png"],
         info: "Created using React and Nextjs, this app displays weather from different areas/cities around the world. The weather information used in this app i powered by OpenWeatherMap's API, and the time and timezone information is converted using Moment.",
@@ -67,11 +64,11 @@ export const content = {
         date: 2021,
         services: ["Front-end development"],
         tech: [
-          <DiReact size={35} />,
-          <IoLogoJavascript size={35} />,
-          <TiHtml5 size={35} />,
+          <SiReact size={35} />,
+          <SiJavascript size={35} />,
+          <SiHtml5 size={35} />,
         ],
-        tech2: ["DiReact", "IoLogoJavascript", "TiHtml5"],
+        tech2: ["SiReact", "SiJavascript", "SiHtml5"],
         featuredImg: "/images/crypto/crypto-preview.png",
         infoImages: [
           "/images/crypto/crypto1.png",
@@ -91,11 +88,11 @@ export const content = {
         date: 2021,
         services: ["Front-end development"],
         tech: [
-          <DiReact size={35} />,
-          <IoLogoJavascript size={35} />,
-          <TiHtml5 size={35} />,
+          <SiReact size={35} />,
+          <SiJavascript size={35} />,
+          <SiHtml5 size={35} />,
         ],
-        tech2: ["DiReact", "IoLogoJavascript", "TiHtml5"],
+        tech2: ["SiReact", "SiJavascript", "SiHtml5"],
         featuredImg: "/images/web-shop/web-shop-preview.png",
         infoImages: [
           "/images/web-shop/web-shop3.png",

@@ -3,10 +3,13 @@ import { useRouter } from "next/router";
 import { content } from "../../content/content";
 import styles from "./Work.module.css";
 
-import { DiReact } from "react-icons/di";
-import { TiHtml5 } from "react-icons/ti";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiNextdotjs, SiSass } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiSass,
+  SiHtml5,
+  SiJavascript,
+  SiReact,
+} from "react-icons/si";
 import { BsArrowRight } from "react-icons/bs";
 
 const Post = ({ works }) => {
@@ -77,12 +80,28 @@ const Post = ({ works }) => {
 
               <div className="flex">
                 {work.data.tech2.map((t) => {
-                  if (t === "DiReact") return <DiReact size={30} />;
-                  if (t === "TiHtml5") return <TiHtml5 size={30} />;
-                  if (t === "IoLogoJavascript")
-                    return <IoLogoJavascript size={30} />;
-                  if (t === "SiNextdotjs") return <SiNextdotjs size={30} />;
-                  if (t === "SiSass") return <SiSass size={30} />;
+                  if (t === "SiReact")
+                    return (
+                      <SiReact className="m-1" color="SkyBlue" size={30} />
+                    );
+                  if (t === "SiHtml5")
+                    return (
+                      <SiHtml5 className="m-1" color="OrangeRed" size={30} />
+                    );
+                  if (t === "SiJavascript")
+                    return (
+                      <SiJavascript className="m-1" color="Orange" size={30} />
+                    );
+                  if (t === "SiNextdotjs")
+                    return (
+                      <SiNextdotjs
+                        className="m-1"
+                        color="MediumTurquoise"
+                        size={30}
+                      />
+                    );
+                  if (t === "SiSass")
+                    return <SiSass className="m-1" color="Orchid" size={30} />;
                 })}
               </div>
             </div>
