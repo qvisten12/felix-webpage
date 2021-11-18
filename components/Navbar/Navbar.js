@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Link from "next/link";
+import Router from "next/router";
 
 const Navbar = () => {
   const navRef = useRef(null);
@@ -8,11 +9,18 @@ const Navbar = () => {
     prevScrollPos = typeof window.pageYOffset;
   }
 
+  const router = Router;
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
+    const reset = () => (navRef.current.style.top = "0");
+
+    Router.events.on("routeChangeComplete", reset);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      Router.events.off("routeChangeComplete", reset);
     };
   });
 
