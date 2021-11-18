@@ -6,6 +6,7 @@ import styles from "./Work.module.css";
 import { DiReact } from "react-icons/di";
 import { TiHtml5 } from "react-icons/ti";
 import { IoLogoJavascript } from "react-icons/io";
+import { SiNextdotjs, SiSass } from "react-icons/si";
 import { BsArrowRight } from "react-icons/bs";
 
 const Post = ({ works }) => {
@@ -80,6 +81,8 @@ const Post = ({ works }) => {
                   if (t === "TiHtml5") return <TiHtml5 size={30} />;
                   if (t === "IoLogoJavascript")
                     return <IoLogoJavascript size={30} />;
+                  if (t === "SiNextdotjs") return <SiNextdotjs size={30} />;
+                  if (t === "SiSass") return <SiSass size={30} />;
                 })}
               </div>
             </div>

@@ -1,6 +1,7 @@
 import { DiReact } from "react-icons/di";
 import { TiHtml5 } from "react-icons/ti";
 import { IoLogoJavascript } from "react-icons/io";
+import { SiNextdotjs, SiSass } from "react-icons/si";
 
 export const content = {
   works: [
@@ -33,6 +34,35 @@ export const content = {
       index: 1,
       slug: 2,
       data: {
+        title: "Yutu - Weather",
+        date: 2021,
+        services: ["Front-end development"],
+        tech: [
+          <DiReact size={35} />,
+          <SiNextdotjs size={35} />,
+          <IoLogoJavascript size={35} />,
+          <TiHtml5 size={35} />,
+          <SiSass size={35} />,
+        ],
+        tech2: [
+          "DiReact",
+          "SiNextdotjs",
+          "IoLogoJavascript",
+          "TiHtml5",
+          "SiSass",
+        ],
+        featuredImg: "/images/yutu/yutu-preview.png",
+        infoImages: ["/images/yutu/yutu1.png", "/images/yutu/yutu2.png"],
+        info: "Created using React and Nextjs, this app displays weather from different areas/cities around the world. The weather information used in this app i powered by OpenWeatherMap's API, and the time and timezone information is converted using Moment.",
+        link: "https://yutu-weather.vercel.app",
+        codelink: "https://github.com/qvisten12/yutu-weather",
+      },
+    },
+
+    {
+      index: 2,
+      slug: 3,
+      data: {
         title: "Crypto Hub",
         date: 2021,
         services: ["Front-end development"],
@@ -54,8 +84,8 @@ export const content = {
       },
     },
     {
-      index: 2,
-      slug: 3,
+      index: 3,
+      slug: 4,
       data: {
         title: "Web-shop demo",
         date: 2021,
