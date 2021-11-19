@@ -117,7 +117,14 @@ const Post = ({ works }) => {
                       />
                     );
                   if (t === "SiSass")
-                    return <SiSass className="m-1" color="Orchid" size={30} />;
+                    return (
+                      <SiSass
+                        key={i}
+                        className="m-1"
+                        color="Orchid"
+                        size={30}
+                      />
+                    );
                 })}
               </div>
             </div>
