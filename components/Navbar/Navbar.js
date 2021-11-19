@@ -9,8 +9,6 @@ const Navbar = () => {
     prevScrollPos = typeof window.pageYOffset;
   }
 
-  const router = Router;
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 

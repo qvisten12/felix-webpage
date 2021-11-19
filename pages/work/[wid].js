@@ -79,22 +79,38 @@ const Post = ({ works }) => {
               </div>
 
               <div className="flex">
-                {work.data.tech2.map((t) => {
+                {work.data.tech2.map((t, i) => {
                   if (t === "SiReact")
                     return (
-                      <SiReact className="m-1" color="SkyBlue" size={30} />
+                      <SiReact
+                        key={i}
+                        className="m-1"
+                        color="SkyBlue"
+                        size={30}
+                      />
                     );
                   if (t === "SiHtml5")
                     return (
-                      <SiHtml5 className="m-1" color="OrangeRed" size={30} />
+                      <SiHtml5
+                        key={i}
+                        className="m-1"
+                        color="OrangeRed"
+                        size={30}
+                      />
                     );
                   if (t === "SiJavascript")
                     return (
-                      <SiJavascript className="m-1" color="Orange" size={30} />
+                      <SiJavascript
+                        key={i}
+                        className="m-1"
+                        color="Orange"
+                        size={30}
+                      />
                     );
                   if (t === "SiNextdotjs")
                     return (
                       <SiNextdotjs
+                        key={i}
                         className="m-1"
                         color="MediumTurquoise"
                         size={30}
