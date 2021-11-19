@@ -22,15 +22,11 @@ export const content = {
         ],
         tech2: ["SiReact", "SiJavascript", "SiHtml5"],
         featuredImg: "/images/covid/covid-preview.png",
-        infoImages: [
-          "/images/covid/covid1.png",
-          "/images/covid/covid2.png",
-          "/images/covid/covid3.png",
-        ],
+        infoImages: ["/images/covid/covid1.png", "/images/covid/covid2.png"],
 
-        info: "This app was made using React and uses an API from disease.sh to get covid-19 related information. Each time the app is ran, a fetch of the newest covid-19 information is retrieved from the API. Aswell as when a new country is selected in the drop-down menu.",
-        link: "https://covid-tracker-virid.vercel.app",
-        codelink: "https://github.com/qvisten12/covid-tracker",
+        info: "This app was made using React and uses an API from covid19.mathdro.id to get covid-19 related information. Each time the app is ran, a fetch of the newest covid-19 information is retrieved from the API. Aswell as when a new country is selected in the drop-down menu.",
+        link: "https://covid-tracking-app.vercel.app",
+        codelink: "https://github.com/qvisten12/covid-tracking-app",
       },
     },
     {
