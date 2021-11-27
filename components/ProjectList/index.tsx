@@ -13,8 +13,7 @@ const ProjectList = () => {
       </div>
       <div className={styles.workContainer}>
         <div>
-          {works &&
-            works.map((p, i) => <ProjectCard key={p.slug} index={i} {...p} />)}
+          {works && works.map((p, i) => <ProjectCard key={p.slug} {...p} />)}
         </div>
       </div>
     </>
