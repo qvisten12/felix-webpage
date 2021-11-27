@@ -4,6 +4,7 @@ import {
   SiHtml5,
   SiJavascript,
   SiReact,
+  SiTypescript,
 } from "react-icons/si";
 
 export const content = {
@@ -56,24 +57,20 @@ export const content = {
       index: 2,
       slug: 3,
       data: {
-        title: "Crypto Hub",
+        title: "Component Library",
         date: 2021,
-        services: ["Front-end development"],
+        services: ["Front-end development", "Dynamic Components"],
         tech: [
           <SiReact size={35} />,
           <SiJavascript size={35} />,
-          <SiHtml5 size={35} />,
+          <SiTypescript size={35} />,
         ],
-        tech2: ["SiReact", "SiJavascript", "SiHtml5"],
-        featuredImg: "/images/crypto/crypto-preview.png",
-        infoImages: [
-          "/images/crypto/crypto1.png",
-          "/images/crypto/crypto2.png",
-          "/images/crypto/crypto3.png",
-        ],
-        info: "Due to the increasing popularity of crypto, i made this app using React that gets coin information from rapidAPI. The app displays the current price, marketcaps and changes of several crypto currencies, aswell as trending news and the biggest crypto exchanges.",
-        link: "https://crypto-hub-ten.vercel.app",
-        codelink: "https://github.com/qvisten12/crypto-hub",
+        tech2: ["SiReact", "SiJavascript", "SiTypescript"],
+        featuredImg: "/images/component-library/component-library-preview.png",
+        infoImages: ["/images/component-library/component-library1.png"],
+        info: "A minimal react component library, supporting both Typescript and javascript. Made in react with typescript and bundled using rollup.",
+        link: "https://github.com/qvisten12/react-component-library/packages/1118391",
+        codelink: "https://github.com/qvisten12/react-component-library",
       },
     },
     {

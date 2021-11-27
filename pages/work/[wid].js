@@ -9,6 +9,7 @@ import {
   SiHtml5,
   SiJavascript,
   SiReact,
+  SiTypescript,
 } from "react-icons/si";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -89,6 +90,16 @@ const Post = ({ works }) => {
                         size={30}
                       />
                     );
+                  if (t === "SiTypescript") {
+                    return (
+                      <SiTypescript
+                        key={i}
+                        className="m-1"
+                        color="dodgerblue"
+                        size={30}
+                      />
+                    );
+                  }
                   if (t === "SiHtml5")
                     return (
                       <SiHtml5
