@@ -34,19 +34,36 @@ interface work {
 }
 
 interface Props {
-  works: work[];
+  works: any;
 }
 
 const Post = ({ works }: Props) => {
   const route = useRouter();
   const { wid } = route.query;
 
-  const [work, setWork] = useState({});
+  const [work, setWork] = useState<work>({
+    index: 0,
+    slug: 0,
+    data: {
+      title: "",
+      date: 0,
+      services: [""],
+      tech: [],
+      tech2: [""],
+      featuredImg: "",
+      infoImages: [""],
+      info: "",
+      link: "",
+      codelink: "",
+    },
+  });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     works = JSON.parse(works);
-    const filteredWorks = works.filter((work) => work.slug === Number(wid));
+    const filteredWorks = works.filter(
+      (work: work) => work.slug === Number(wid)
+    );
     setWork(filteredWorks[0]);
     setLoading(false);
   }, []);
