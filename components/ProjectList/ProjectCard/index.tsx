@@ -5,13 +5,25 @@ import styles from "./ProjectCard.module.css";
 
 const bgColors = ["#9cabcc", "#3189c7", "#9cbebe", "#d26742"];
 
-const ProjectCard = (props) => {
-  const {
-    index,
-    slug,
-    data: { title, date, services, tech, featuredImg },
-  } = props;
+interface data {
+  title: string;
+  date: number;
+  services: string[];
+  tech: any[];
+  featuredImg: string;
+}
 
+interface Props {
+  index: number;
+  slug: number;
+  data: data;
+}
+
+const ProjectCard = ({
+  index,
+  slug,
+  data: { title, date, services, tech, featuredImg },
+}: Props) => {
   return (
     <Link href="/work/[wid]" as={`/work/${slug}`}>
       <a className={styles.card} style={{ background: bgColors[index % 4] }}>

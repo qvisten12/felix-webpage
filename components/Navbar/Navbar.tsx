@@ -3,8 +3,8 @@ import Link from "next/link";
 import Router from "next/router";
 
 const Navbar = () => {
-  const navRef = useRef(null);
-  let prevScrollPos;
+  const navRef = useRef<HTMLElement>(null);
+  let prevScrollPos: Number | String;
   if (typeof window !== "undefined") {
     prevScrollPos = typeof window.pageYOffset;
   }
@@ -12,7 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
-    const reset = () => (navRef.current.style.top = "0");
+    const reset = () => (navRef.current!.style.top = "0");
 
     Router.events.on("routeChangeComplete", reset);
 
@@ -26,12 +26,12 @@ const Navbar = () => {
     let currentScrollPos = window.pageYOffset;
 
     if (prevScrollPos > currentScrollPos) {
-      navRef.current.style.top = "0";
+      navRef.current!.style.top = "0";
     } else {
       if (currentScrollPos < 1) {
         return;
       }
-      navRef.current.style.top = "-100px";
+      navRef.current!.style.top = "-100px";
     }
     prevScrollPos = currentScrollPos;
   }

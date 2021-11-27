@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { content } from "../../content/content";
 import styles from "./Work.module.css";
+import { GetStaticPaths, GetStaticProps } from "next";
 
 import {
   SiNextdotjs,
@@ -13,7 +14,30 @@ import {
 } from "react-icons/si";
 import { BsArrowRight } from "react-icons/bs";
 
-const Post = ({ works }) => {
+interface data {
+  title: string;
+  date: number;
+  services: string[];
+  tech: any[];
+  tech2: string[];
+  featuredImg: string;
+  infoImages: string[];
+  info: string;
+  link: string;
+  codelink: string;
+}
+
+interface work {
+  index: number;
+  slug: number;
+  data: data;
+}
+
+interface Props {
+  works: work[];
+}
+
+const Post = ({ works }: Props) => {
   const route = useRouter();
   const { wid } = route.query;
 
@@ -156,14 +180,14 @@ const Post = ({ works }) => {
   );
 };
 
-export const getStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [], //indicates that no page needs be created at build time
     fallback: "blocking", //indicates the type of fallback
   };
 };
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const works = JSON.stringify(content.works);
 
   return {
@@ -171,6 +195,6 @@ export async function getStaticProps() {
       works,
     },
   };
-}
+};
 
 export default Post;
