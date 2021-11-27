@@ -68,7 +68,7 @@ export const content = {
         tech2: ["SiReact", "SiJavascript", "SiTypescript"],
         featuredImg: "/images/component-library/component-library-preview.png",
         infoImages: ["/images/component-library/component-library1.png"],
-        info: "A minimal react component library, supporting both Typescript and javascript. Made in react with typescript and bundled using rollup.",
+        info: "A minimal react component library, supporting both javascript and Typescripts with custom types. Made in react with typescript and bundled using rollup. Install using npm: npm install @qvisten12/react-component-library",
         link: "https://github.com/qvisten12/react-component-library/packages/1118391",
         codelink: "https://github.com/qvisten12/react-component-library",
       },
