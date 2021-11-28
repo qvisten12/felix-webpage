@@ -72,6 +72,12 @@
   margin: 0;
 }
 
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
 .date {
   margin: 0;
   font-size: 16px;
@@ -86,7 +92,7 @@
 
 @media screen and (max-width: 600px) {
   .services {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 
@@ -105,7 +111,7 @@
 
 @media screen and (max-width: 800px) {
   .tech {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-left: -5px;
     transform: scale(0.8);
     transform-origin: left center;
