@@ -204,11 +204,9 @@ const Post = ({ projects }: Props) => {
 export const getStaticPaths: GetStaticPaths = async () => {
   const slugs: string[] = getAllProjectIds();
 
-  const paths = slugs.map((slug) => {
-    return {
-      params: { pid: slug.toString() },
-    };
-  });
+  const paths = slugs.map((slug) => ({
+    params: { pid: slug.toString() || "404" },
+  }));
 
   return {
     paths,
