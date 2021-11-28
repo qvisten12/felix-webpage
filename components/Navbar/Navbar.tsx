@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 import Router from "next/router";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const navRef = useRef<HTMLElement>(null);
@@ -45,7 +46,9 @@ const Navbar = () => {
       className="flex pt-6 pb-6 md:px-10 items-center justify-between fixed top-0 w-screen z-40 bg-white opacity-90"
     >
       <Link href="/">
-        <a className="font-black text-2xl ml-5 text-gray-800">
+        <a
+          className={`font-black text-2xl ml-5 text-gray-800 ${styles.hover_underline_animation}`}
+        >
           Felix.
           <span className=" font-semibold text-xl text-blue-600">
             Ljungqvist
@@ -53,12 +56,22 @@ const Navbar = () => {
         </a>
       </Link>
 
-      <a
-        href="mailto:felixljungqvist@icloud.com"
-        className="text-base text-gray-400 mr-5"
-      >
-        Contact
-      </a>
+      <div>
+        <a
+          href="mailto:felixljungqvist@icloud.com"
+          className="text-base text-gray-400 mr-5 hover:text-gray-800"
+        >
+          Contact
+        </a>
+        <a
+          href="https://github.com/qvisten12/felix-webpage"
+          rel="noreferrer nofollow"
+          target="_blank"
+          className="text-base text-gray-400 mr-5 hover:text-gray-800"
+        >
+          Source
+        </a>
+      </div>
     </nav>
   );
 };

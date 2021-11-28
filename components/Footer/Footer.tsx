@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
 import Link from "next/link";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
@@ -9,7 +10,9 @@ const Footer = () => {
       <hr />
       <div className="flex mt-10 justify-between items-center">
         <Link href="/">
-          <a className="font-black text-2xl ml-5 text-gray-800">
+          <a
+            className={`font-black text-2xl ml-5 text-gray-800 ${styles.hover_underline_animation}`}
+          >
             Felix.
             <span className=" font-semibold text-xl text-blue-600">
               Ljungqvist
