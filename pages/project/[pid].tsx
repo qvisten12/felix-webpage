@@ -15,6 +15,7 @@ import {
 } from "react-icons/si";
 import { BsArrowRight } from "react-icons/bs";
 import { title } from "process";
+import { getAllProjectIds } from "../../lib/projects";
 
 interface data {
   title: string;
@@ -201,9 +202,17 @@ const Post = ({ projects }: Props) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
+  const slugs: string[] = getAllProjectIds();
+
+  const paths = slugs.map((slug) => {
+    return {
+      params: { pid: slug.toString() },
+    };
+  });
+
   return {
-    paths: [], //indicates that no page needs be created at build time
-    fallback: "blocking", //indicates the type of fallback
+    paths,
+    fallback: false,
   };
 };
 
