@@ -7,7 +7,7 @@ const Header = () => {
       mt-32 md:mt-56 container max-w-5xl mx-auto px-10 mb-24"
     >
       <div className="flex flex-col flex-1 mb-10 md:mb-0">
-        <h1 className="text-5xl font-extrabold mb-5">Hi, I'm Felix,</h1>
+        <h1 className="text-5xl font-extrabold mb-5">Hi, I&apos;m Felix</h1>
         <p className="font-medium text-2xl text-gray-500 mb-8">
           a web developer
           <br />
@@ -27,8 +27,8 @@ const Header = () => {
       <div className="flex flex-col max-w-lg text-gray-600 ">
         <p className="font-medium text-lg mb-5">
           I’m a<span className="text-gray-700 font-bold"> Gothenburg</span>{" "}
-          based aspiring Jr. front-end developer and designer. I’m experienced
-          in <span className="text-gray-700 font-bold">HTML5</span>,
+          based aspiring Jr. front-end developer and designer. I&apos;m
+          experienced in <span className="text-gray-700 font-bold">HTML5</span>,
           <span className="text-gray-700 font-bold">JS</span> and{" "}
           <span className="text-gray-700 font-bold">CSS3</span> and modern
           libraries <span className="text-gray-700 font-bold">React</span> and{" "}
