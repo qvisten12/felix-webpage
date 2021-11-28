@@ -1,4 +1,5 @@
 import React, { ReactChild, ReactChildren } from "react";
+import Feedback from "../Feedback/Feedback";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 
@@ -11,6 +12,7 @@ const Layout = ({ children }: Props) => {
     <>
       <Navbar />
       {children}
+      <Feedback />
       <Footer />
     </>
   );
