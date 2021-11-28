@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { content } from "../../content/content";
 import styles from "./Project.module.css";
+import Head from "next/head";
 import { GetStaticPaths, GetStaticProps } from "next";
 
 import {
@@ -13,6 +14,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { BsArrowRight } from "react-icons/bs";
+import { title } from "process";
 
 interface data {
   title: string;
@@ -71,6 +73,9 @@ const Post = ({ projects }: Props) => {
       className="flex flex-col justify-center md:flex-row
       mt-28  md:mt-40 container max-w-5xl mx-auto px-10 mb-24"
     >
+      <Head>
+        <title>Felix Ljungqvist - {project.data.title}</title>
+      </Head>
       {loading ? (
         "loading..."
       ) : (

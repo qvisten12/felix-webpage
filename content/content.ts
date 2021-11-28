@@ -37,7 +37,7 @@ export const content = {
       data: {
         title: "Component Library",
         date: 2021,
-        services: ["Front-end development", "Dynamic Components"],
+        services: ["Front-end development"],
         tech: ["SiReact", "SiJavascript", "SiTypescript"],
         featuredImg: "/images/component-library/component-library-preview.png",
         infoImages: ["/images/component-library/component-library1.png"],
