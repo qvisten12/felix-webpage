@@ -1,14 +1,5 @@
-import {
-  SiNextdotjs,
-  SiSass,
-  SiHtml5,
-  SiJavascript,
-  SiReact,
-  SiTypescript,
-} from "react-icons/si";
-
 export const content = {
-  works: [
+  projects: [
     {
       index: 0,
       slug: 1,
@@ -16,15 +7,9 @@ export const content = {
         title: "Covid Tracker",
         date: 2021,
         services: ["Front-end development"],
-        tech: [
-          <SiReact size={35} />,
-          <SiJavascript size={35} />,
-          <SiHtml5 size={35} />,
-        ],
-        tech2: ["SiReact", "SiJavascript", "SiHtml5"],
+        tech: ["SiReact", "SiJavascript", "SiHtml5"],
         featuredImg: "/images/covid/covid-preview.png",
         infoImages: ["/images/covid/covid1.png", "/images/covid/covid2.png"],
-
         info: "This app was made using React and uses an API from covid19.mathdro.id to get covid-19 related information. Each time the app is ran, a fetch of the newest covid-19 information is retrieved from the API. Aswell as when a new country is selected in the drop-down menu.",
         link: "https://covid-tracking-app.vercel.app",
         codelink: "https://github.com/qvisten12/covid-tracking-app",
@@ -37,14 +22,7 @@ export const content = {
         title: "Yutu - Weather",
         date: 2021,
         services: ["Front-end development"],
-        tech: [
-          <SiReact size={35} />,
-          <SiNextdotjs size={35} />,
-          <SiJavascript size={35} />,
-          <SiHtml5 size={35} />,
-          <SiSass size={35} />,
-        ],
-        tech2: ["SiReact", "SiNextdotjs", "SiJavascript", "SiHtml5", "SiSass"],
+        tech: ["SiReact", "SiNextdotjs", "SiJavascript", "SiHtml5", "SiSass"],
         featuredImg: "/images/yutu/yutu-preview.png",
         infoImages: ["/images/yutu/yutu1.png", "/images/yutu/yutu2.png"],
         info: "Created using React and Nextjs, this app displays weather from different areas/cities around the world. The weather information used in this app i powered by OpenWeatherMap's API, and the time and timezone information is converted using Moment.",
@@ -60,12 +38,7 @@ export const content = {
         title: "Component Library",
         date: 2021,
         services: ["Front-end development", "Dynamic Components"],
-        tech: [
-          <SiReact size={35} />,
-          <SiJavascript size={35} />,
-          <SiTypescript size={35} />,
-        ],
-        tech2: ["SiReact", "SiJavascript", "SiTypescript"],
+        tech: ["SiReact", "SiJavascript", "SiTypescript"],
         featuredImg: "/images/component-library/component-library-preview.png",
         infoImages: ["/images/component-library/component-library1.png"],
         info: "A minimal react component library, supporting both javascript and Typescripts with custom types. Made in react with typescript and bundled using rollup. Install using npm: npm install @qvisten12/react-component-library",
@@ -80,12 +53,7 @@ export const content = {
         title: "Web-shop demo",
         date: 2021,
         services: ["Front-end development"],
-        tech: [
-          <SiReact size={35} />,
-          <SiJavascript size={35} />,
-          <SiHtml5 size={35} />,
-        ],
-        tech2: ["SiReact", "SiJavascript", "SiHtml5"],
+        tech: ["SiReact", "SiJavascript", "SiHtml5"],
         featuredImg: "/images/web-shop/web-shop-preview.png",
         infoImages: [
           "/images/web-shop/web-shop3.png",

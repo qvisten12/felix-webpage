@@ -103,7 +103,7 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/_app.tsx",
-    "content/content.js"
+    "content/content.ts"
   ],
   "exclude": ["node_modules"]
 }

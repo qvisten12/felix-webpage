@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { content } from "../../content/content";
-import styles from "./Work.module.css";
+import styles from "./Project.module.css";
 import { GetStaticPaths, GetStaticProps } from "next";
 
 import {
@@ -18,8 +18,7 @@ interface data {
   title: string;
   date: number;
   services: string[];
-  tech: any[];
-  tech2: string[];
+  tech: string[];
   featuredImg: string;
   infoImages: string[];
   info: string;
@@ -27,29 +26,28 @@ interface data {
   codelink: string;
 }
 
-interface work {
+interface project {
   index: number;
   slug: number;
   data: data;
 }
 
 interface Props {
-  works: any;
+  projects: any;
 }
 
-const Post = ({ works }: Props) => {
+const Post = ({ projects }: Props) => {
   const route = useRouter();
-  const { wid } = route.query;
+  const { pid } = route.query;
 
-  const [work, setWork] = useState<work>({
+  const [project, setProject] = useState<project>({
     index: 0,
     slug: 0,
     data: {
       title: "",
       date: 0,
       services: [""],
-      tech: [],
-      tech2: [""],
+      tech: [""],
       featuredImg: "",
       infoImages: [""],
       info: "",
@@ -60,11 +58,11 @@ const Post = ({ works }: Props) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    works = JSON.parse(works);
-    const filteredWorks = works.filter(
-      (work: work) => work.slug === Number(wid)
+    projects = JSON.parse(projects);
+    const filteredProjects = projects.filter(
+      (project: project) => project.slug === Number(pid)
     );
-    setWork(filteredWorks[0]);
+    setProject(filteredProjects[0]);
     setLoading(false);
   }, []);
 
@@ -78,17 +76,17 @@ const Post = ({ works }: Props) => {
       ) : (
         <div className="flex flex-col">
           <h1 className="text-5xl font-semibold text-gray-800">
-            {work.data.title}
+            {project.data.title}
           </h1>
 
           <div className="flex flex-col md:flex-row w-full justify-between mt-14 mb-10">
             <div className="flex flex-col w-full max-w-2xl mb-10 md:mb-0">
               <p className="text-xl font-medium text-gray-600">
-                {work.data.info}
+                {project.data.info}
               </p>
               <div className="mt-14 flex justify-between">
                 <a
-                  href={work.data.link}
+                  href={project.data.link}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="text-blue-500 font-bold text-xl cursor-pointer
@@ -98,7 +96,7 @@ const Post = ({ works }: Props) => {
                   <BsArrowRight size={24} className="inline-block" />
                 </a>
                 <a
-                  href={work.data.codelink}
+                  href={project.data.codelink}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="text-blue-500 font-bold text-xl cursor-pointer
@@ -113,7 +111,7 @@ const Post = ({ works }: Props) => {
             <div className="flex flex-col">
               <div className="flex flex-col mb-10">
                 <p className="text-gray-400 mb-1 text-lg">Services</p>
-                {work.data.services.map((s, i) => (
+                {project.data.services.map((s, i) => (
                   <p key={i} className="text-gray-600">
                     {s}
                   </p>
@@ -121,7 +119,7 @@ const Post = ({ works }: Props) => {
               </div>
 
               <div className="flex">
-                {work.data.tech2.map((t, i) => {
+                {project.data.tech.map((t, i) => {
                   if (t === "SiReact")
                     return (
                       <SiReact
@@ -184,9 +182,9 @@ const Post = ({ works }: Props) => {
 
           <div className="w-full max-w-7xl ">
             <div className="w-full">
-              {work.data.infoImages.map((img, i) => (
+              {project.data.infoImages.map((img, i) => (
                 <div key={i}>
-                  <img className={styles.img} src={img} alt="work" />
+                  <img className={styles.img} src={img} alt="project" />
                 </div>
               ))}
             </div>
@@ -205,11 +203,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const works = JSON.stringify(content.works);
+  const projects = JSON.stringify(content.projects);
 
   return {
     props: {
-      works,
+      projects,
     },
   };
 };
