@@ -31,14 +31,21 @@ const Spotify = () => {
           </div>
 
           <div className="flex-1">
-            <p className="font-bold">Now Playing:</p>
-            <p className="font-semibold component">
+            {data?.isPlaying ? <p className="font-bold">Now Playing:</p> : ""}
+            <p className="font-semibold text-sm">
               {data?.isPlaying ? data.title : "Not Listening"}
             </p>
             <p className="text-xs font-dark">
               {data?.isPlaying ? data.artist : "Spotify"}
             </p>
           </div>
+          {data?.isPlaying ? (
+            <div className="absolute bottom-1.5 right-1.5">
+              <SiSpotify size={20} color={"#1ED760"} />
+            </div>
+          ) : (
+            ""
+          )}
         </a>
       </div>
     </>
