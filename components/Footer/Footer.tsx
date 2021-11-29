@@ -3,12 +3,13 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import Spotify from "../Spotify/Spotify";
 
 const Footer = () => {
   return (
-    <div className="container max-w-5xl w-full mx-auto md:px-10 mb-16">
+    <div className="container max-w-5xl w-full mx-auto md:px-10 mb-10 md:mb-16">
       <hr />
-      <div className="flex mt-10 justify-between items-center">
+      <div className="flex flex-col md:flex-row mt-10 justify-between items-center">
         <Link href="/">
           <a
             className={`font-black text-2xl ml-5 text-gray-800 ${styles.hover_underline_animation}`}
@@ -20,7 +21,9 @@ const Footer = () => {
           </a>
         </Link>
 
-        <div className="flex justify-between w-32 mr-5 md:mr-0">
+        <Spotify />
+
+        <div className="flex justify-between w-32 mr-5 md:mr-0 mt-4 md:mt-0">
           <a
             href="https://twitter.com/felixljungqvis1"
             aria-label="twitter"
