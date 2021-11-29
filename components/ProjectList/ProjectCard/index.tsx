@@ -12,7 +12,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
-const bgColors = ["#9cabcc", "#3189c7", "#9cbebe", "#d26742"];
+const bgColors = ["#3189c7", "#9cabcc", "#9cbebe", "#d26742"];
 
 interface data {
   title: string;
