@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 import styles from "./ProjectCard.module.css";
 
@@ -69,7 +70,7 @@ const ProjectCard = ({
           </div>
         </div>
         <div className={styles.images}>
-          <img src={featuredImg} alt={title} />
+          <Image src={featuredImg} alt={title} layout="fill" />
         </div>
       </a>
     </Link>

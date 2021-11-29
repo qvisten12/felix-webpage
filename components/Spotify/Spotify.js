@@ -1,6 +1,7 @@
 import React from "react";
 import useSWR from "swr";
 import { SiSpotify } from "react-icons/si";
+import Image from "next/image";
 
 const Spotify = () => {
   const fetcher = (url) => fetch(url).then((r) => r.json());
@@ -20,10 +21,12 @@ const Spotify = () => {
         >
           <div className="w-16 text-gray-400 hover:text-gray-600">
             {data?.isPlaying ? (
-              <img
-                className="w-16 shadow-sm"
+              <Image
                 src={data?.albumImageUrl}
                 alt={data?.album}
+                width="70%"
+                height="70%"
+                layout="fixed"
               />
             ) : (
               <SiSpotify size={30} />

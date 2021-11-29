@@ -4,6 +4,7 @@ import { content } from "../../content/content";
 import styles from "./Project.module.css";
 import Head from "next/head";
 import { GetStaticPaths, GetStaticProps } from "next";
+import Image from "next/image";
 
 import {
   SiNextdotjs,
@@ -188,8 +189,15 @@ const Post = ({ projects }: Props) => {
           <div className="w-full max-w-7xl ">
             <div className="w-full">
               {project.data.infoImages.map((img, i) => (
-                <div key={i}>
-                  <img className={styles.img} src={img} alt="project" />
+                <div key={i} className={styles.img}>
+                  <Image
+                    src={img}
+                    alt="project"
+                    width="100%"
+                    height="100%"
+                    layout="responsive"
+                    className="rounded-md"
+                  />
                 </div>
               ))}
             </div>
