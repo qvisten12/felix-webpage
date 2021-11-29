@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row mt-10 justify-between items-center">
         <Link href="/">
           <a
-            className={`font-black text-2xl ml-5 text-gray-800 ${styles.hover_underline_animation}`}
+            className={`font-black text-2xl text-gray-800 ${styles.hover_underline_animation}`}
           >
             Felix.
             <span className=" font-semibold text-xl text-blue-600">
@@ -23,7 +23,7 @@ const Footer = () => {
 
         <Spotify />
 
-        <div className="flex justify-between w-32 mr-5 md:mr-0 mt-4 md:mt-0">
+        <div className="flex justify-between w-32 md:w-40 mt-4 md:mt-0">
           <a
             href="https://twitter.com/felixljungqvis1"
             aria-label="twitter"

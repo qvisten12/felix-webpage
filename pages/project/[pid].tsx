@@ -14,7 +14,6 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { BsArrowRight } from "react-icons/bs";
-import { title } from "process";
 import { getAllProjectIds } from "../../lib/projects";
 
 interface data {
