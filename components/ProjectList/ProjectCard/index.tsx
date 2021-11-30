@@ -99,7 +99,7 @@ const ProjectCard = ({
           </div>
         </div>
         <div className={styles.images}>
-          <Image src={featuredImg} alt={title} layout="fill" />
+          <Image src={featuredImg} alt={title} priority layout="fill" />
         </div>
       </a>
     </Link>
