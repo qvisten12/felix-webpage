@@ -4,7 +4,7 @@ import { SiSpotify } from "react-icons/si";
 import Image from "next/image";
 
 const Spotify = () => {
-  const fetcher = (url) => fetch(url).then((r) => r.json());
+  const fetcher = (url: any) => fetch(url).then((r) => r.json());
   const { data } = useSWR("/api/spotify", fetcher);
   return (
     <>
