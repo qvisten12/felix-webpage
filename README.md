@@ -1,7 +1,11 @@
 # Welcome to my personal Portfolio
 
 [![DeepScan grade](https://deepscan.io/api/teams/16028/projects/19258/branches/494500/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16028&pid=19258&bid=494500)
-[![Lighthouse Accessibility](./lighthouse/lighthouse_accessibility.svg)](https://github.com/GoogleChrome/lighthouse)
+
+[![Lighthouse Performance](./public/lighthouse/lighthouse_performance.svg)](https://github.com/GoogleChrome/lighthouse)
+[![Lighthouse Accessibility](./public/lighthouse/lighthouse_accessibility.svg)](https://github.com/GoogleChrome/lighthouse)
+[![Lighthouse Best Practices](./public/lighthouse/lighthouse_best-practices.svg)](https://github.com/GoogleChrome/lighthouse)
+[![Lighthouse SEO](./public/lighthouse/lighthouse_seo.svg)](https://github.com/GoogleChrome/lighthouse)
 
 Install using Yarn install
 Run using Yarn dev
