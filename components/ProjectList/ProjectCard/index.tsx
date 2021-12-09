@@ -6,7 +6,7 @@ import styles from "./ProjectCard.module.css";
 
 import {
   SiNextdotjs,
-  SiSass,
+  SiTailwindcss,
   SiHtml5,
   SiJavascript,
   SiReact,
@@ -88,9 +88,9 @@ const ProjectCard = ({
                     className="m-1 flex items-center justify-center w-11 h-11"
                   />
                 );
-              if (t === "SiSass")
+              if (t === "SiTailwindcss")
                 return (
-                  <SiSass
+                  <SiTailwindcss
                     key={i}
                     className="m-1 flex items-center justify-center w-11 h-11"
                   />

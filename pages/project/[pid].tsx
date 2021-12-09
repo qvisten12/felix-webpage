@@ -8,11 +8,11 @@ import Image from "next/image";
 
 import {
   SiNextdotjs,
-  SiSass,
   SiHtml5,
   SiJavascript,
   SiReact,
   SiTypescript,
+  SiTailwindcss,
 } from "react-icons/si";
 import { BsArrowRight } from "react-icons/bs";
 import { getAllProjectIds } from "../../lib/projects";
@@ -86,7 +86,7 @@ const Post = ({ projects }: Props) => {
           </h1>
 
           <div className="flex flex-col md:flex-row w-full justify-between mt-14 mb-10">
-            <div className="flex flex-col w-full max-w-2xl mb-10 md:mb-0">
+            <div className="flex flex-col w-full md:w-3/4 max-w-2xl mb-10 md:mb-0">
               <p className="text-xl font-medium text-gray-600">
                 {project.data.info}
               </p>
@@ -172,12 +172,12 @@ const Post = ({ projects }: Props) => {
                         size={30}
                       />
                     );
-                  if (t === "SiSass")
+                  if (t === "SiTailwindcss")
                     return (
-                      <SiSass
+                      <SiTailwindcss
                         key={i}
                         className="m-1"
-                        color="Orchid"
+                        color="darkturquoise"
                         size={30}
                       />
                     );
