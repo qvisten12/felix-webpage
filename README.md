@@ -7,11 +7,11 @@
 [![Lighthouse Best Practices](./public/lighthouse/lighthouse_best-practices.svg)](https://github.com/GoogleChrome/lighthouse)
 [![Lighthouse SEO](./public/lighthouse/lighthouse_seo.svg)](https://github.com/GoogleChrome/lighthouse)
 
-# Install using Yarn
+### Install using Yarn
 
 Yarn install
 
-# Run using Yarn
+### Run using Yarn
 
 Yarn dev
 
