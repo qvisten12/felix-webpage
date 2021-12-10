@@ -81,7 +81,7 @@ const Post = ({ projects }: Props) => {
         "loading..."
       ) : (
         <div className="flex flex-col">
-          <h1 className="text-5xl font-semibold text-gray-800">
+          <h1 className="text-4xl md:text-5xl font-semibold text-gray-800">
             {project.data.title}
           </h1>
 
