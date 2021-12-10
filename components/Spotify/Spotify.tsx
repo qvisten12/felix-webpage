@@ -8,7 +8,7 @@ const Spotify = () => {
   const { data } = useSWR("/api/spotify", fetcher);
   return (
     <>
-      <div className="flex items-center justify-center w-full ">
+      <div className="flex items-center justify-center md:w-full ">
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -17,7 +17,8 @@ const Spotify = () => {
               ? data.songUrl
               : "https://open.spotify.com/user/6xoyy47wge2t20pajw9d5awj7"
           }
-          className="relative flex items-center mt-3 md:mt-0 p-2 space-x-4 transition-shadow border rounded-md hover:shadow-md w-80 md:w-720"
+          className="relative flex items-center mt-3 md:mt-0 p-2 space-x-4 transition-shadow
+          border rounded-md hover:shadow-md w-80 md:w-720"
         >
           <div className="w-16 text-gray-400 hover:text-gray-600">
             {data?.isPlaying ? (
