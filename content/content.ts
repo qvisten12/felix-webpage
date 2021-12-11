@@ -4,21 +4,6 @@ export const content = {
       index: 0,
       slug: 1,
       data: {
-        title: "Covid Tracker",
-        date: 2021,
-        services: ["Front-end development"],
-        tech: ["SiReact", "SiJavascript", "SiHtml5"],
-        featuredImg: "/images/covid/covid-preview.png",
-        infoImages: ["/images/covid/covid1.png", "/images/covid/covid2.png"],
-        info: "This app was made using React and uses an API from covid19.mathdro.id to get covid-19 related information. Each time the app is ran, a fetch of the newest covid-19 information is retrieved from the API. Aswell as when a new country is selected in the drop-down menu.",
-        link: "https://covid-tracking-app.vercel.app",
-        codelink: "https://github.com/qvisten12/covid-tracking-app",
-      },
-    },
-    {
-      index: 1,
-      slug: 2,
-      data: {
         title: "Yutu - Weather",
         date: 2021,
         services: ["Front-end development"],
@@ -36,10 +21,9 @@ export const content = {
         codelink: "https://github.com/qvisten12/yutu-weather",
       },
     },
-
     {
-      index: 2,
-      slug: 3,
+      index: 1,
+      slug: 2,
       data: {
         title: "Component Library",
         date: 2021,
@@ -50,6 +34,21 @@ export const content = {
         info: "A minimal react component library, supporting both javascript and Typescripts with custom types. Made in react with typescript and bundled using rollup. Install using npm: npm install @qvisten12/react-component-library",
         link: "https://github.com/qvisten12/react-component-library/packages/1118391",
         codelink: "https://github.com/qvisten12/react-component-library",
+      },
+    },
+    {
+      index: 2,
+      slug: 3,
+      data: {
+        title: "Covid Tracker",
+        date: 2021,
+        services: ["Front-end development"],
+        tech: ["SiReact", "SiJavascript", "SiHtml5"],
+        featuredImg: "/images/covid/covid-preview.png",
+        infoImages: ["/images/covid/covid1.png", "/images/covid/covid2.png"],
+        info: "This app was made using React and uses an API from covid19.mathdro.id to get covid-19 related information. Each time the app is ran, a fetch of the newest covid-19 information is retrieved from the API. Aswell as when a new country is selected in the drop-down menu.",
+        link: "https://covid-tracking-app.vercel.app",
+        codelink: "https://github.com/qvisten12/covid-tracking-app",
       },
     },
     {

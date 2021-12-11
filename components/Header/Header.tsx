@@ -8,7 +8,7 @@ const Header = () => {
     >
       <div className="flex flex-col flex-1 mb-10 md:mb-0 md:w-1/2">
         <h1 className="text-5xl font-extrabold mb-5">Hi, I&apos;m Felix</h1>
-        <p className="font-medium text-2xl text-gray-500 mb-8">
+        <p className="font-medium text-2xl text-gray-500 mb-8 ">
           a web developer
           <br />
           and tech enthusiast
