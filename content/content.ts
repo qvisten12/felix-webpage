@@ -43,7 +43,7 @@ export const content = {
       data: {
         title: "Realtime Chat",
         date: 2021,
-        services: ["Front-end development"],
+        services: ["Front & back-end development"],
         tech: ["SiReact", "SiJavascript"],
         featuredImg: "/images/chat-app/chat-app-preview.png",
         infoImages: [
