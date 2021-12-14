@@ -13,7 +13,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
-const bgColors = ["#3189c7", "#9cabcc", "#9cbebe", "#d26742"];
+const bgColors = ["#3189c7", "#9cabcc", "#9cbebe", "#f3746d", "#4974a5"];
 
 interface data {
   title: string;
@@ -36,7 +36,10 @@ const ProjectCard = ({
 }: Props) => {
   return (
     <Link href="/project/[pid]" as={`/project/${slug}`}>
-      <a className={styles.card} style={{ background: bgColors[index % 4] }}>
+      <a
+        className={styles.card}
+        style={{ background: bgColors[index % bgColors.length] }}
+      >
         <div
           className="md:ml-auto w-400 text-white py-10 pl-10 ml-0 h-600
          md:py-16 md:pr-0 md:pl-16 md:h-full box-border flex flex-col "

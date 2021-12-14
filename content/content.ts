@@ -21,6 +21,7 @@ export const content = {
         codelink: "https://github.com/qvisten12/yutu-weather",
       },
     },
+
     {
       index: 1,
       slug: 2,
@@ -40,6 +41,24 @@ export const content = {
       index: 2,
       slug: 3,
       data: {
+        title: "Realtime Chat",
+        date: 2021,
+        services: ["Front-end development"],
+        tech: ["SiReact", "SiJavascript"],
+        featuredImg: "/images/chat-app/chat-app-preview.png",
+        infoImages: [
+          "/images/chat-app/chat-app1.png",
+          "/images/chat-app/chat-app2.png",
+        ],
+        info: "A React chat app using Socket.io for realtime chat updates.",
+        link: "https://github.com/qvisten12/chat-app",
+        codelink: "https://github.com/qvisten12/chat-app",
+      },
+    },
+    {
+      index: 3,
+      slug: 4,
+      data: {
         title: "Covid Tracker",
         date: 2021,
         services: ["Front-end development"],
@@ -52,8 +71,8 @@ export const content = {
       },
     },
     {
-      index: 3,
-      slug: 4,
+      index: 4,
+      slug: 5,
       data: {
         title: "Web-shop demo",
         date: 2021,
