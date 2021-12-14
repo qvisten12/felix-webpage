@@ -50,7 +50,7 @@ export const content = {
           "/images/chat-app/chat-app1.png",
           "/images/chat-app/chat-app2.png",
         ],
-        info: "A React chat app using Socket.io for realtime chat updates.",
+        info: "A React chat app using Socket.io for realtime chat updates. Server was made using nodejs and socket.io.",
         link: "https://github.com/qvisten12/chat-app",
         codelink: "https://github.com/qvisten12/chat-app",
       },
