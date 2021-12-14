@@ -19,7 +19,8 @@ const Header = () => {
           <button
             className="border-blue-500 border-2 w-32 p-2
                     rounded-md text-blue-500 text-2xl font-semibold
-                    hover:bg-blue-500 hover:text-white"
+                    hover:bg-blue-500 hover:text-white
+                    shadow-lg shadow-blue-200/60"
           >
             Say hello
           </button>
@@ -28,7 +29,10 @@ const Header = () => {
 
       <div className="flex flex-col max-w-lg md:w-1/2 text-gray-600 ">
         <p className="font-medium text-xl mb-5">
-          I’m a<span className="text-gray-700 font-bold"> Gothenburg</span>{" "}
+          I’m a{" "}
+          <span className="text-gray-700 font-bold underline decoration-sky-500 decoration-2">
+            Gothenburg
+          </span>{" "}
           based aspiring Jr. front-end developer and designer. I&apos;m
           experienced in <span className="text-gray-700 font-bold">HTML5</span>,
           <span className="text-gray-700 font-bold">JS</span> and{" "}
