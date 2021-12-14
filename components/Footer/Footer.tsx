@@ -1,9 +1,8 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
-import Link from "next/link";
-import styles from "./Footer.module.css";
 import Spotify from "../Spotify/Spotify";
+import Logo from "../Logo/Logo";
 
 const Footer = () => {
   const [windowSize, setWindowSize] = useState<number>();
@@ -29,16 +28,7 @@ const Footer = () => {
       <hr />
       <div className="flex flex-col md:flex-row mt-10 justify-between items-center">
         <div className="flex justify-between items-center w-full mb-4 md:mb-0">
-          <Link href="/">
-            <a
-              className={`font-black text-2xl text-gray-800 ${styles.hover_underline_animation}`}
-            >
-              Felix.
-              <span className=" font-semibold text-xl text-blue-600">
-                Ljungqvist
-              </span>
-            </a>
-          </Link>
+          <Logo />
 
           {windowSize! >= 768 ? <Spotify /> : ""}
 

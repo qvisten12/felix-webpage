@@ -1,9 +1,9 @@
-.hover_underline_animation {
+.hover_animation {
   display: inline-block;
   position: relative;
 }
 
-.hover_underline_animation:after {
+.hover_animation:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -21,7 +21,7 @@
   transition: transform 0.5s ease-out;
 }
 
-.hover_underline_animation:hover:after {
+.hover_animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
