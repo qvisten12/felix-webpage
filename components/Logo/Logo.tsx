@@ -10,9 +10,9 @@ const Logo: FC<Props> = ({ navbar }) => {
   return (
     <Link href="/">
       <a
-        className={`font-black ${navbar ? "ml-5" : ""} text-2xl text-gray-800 ${
-          styles.hover_animation
-        }`}
+        className={`font-black ${
+          navbar ? "ml-5 md:ml-0" : ""
+        } text-2xl text-gray-800 ${styles.hover_animation}`}
       >
         Felix.
         <span className=" font-semibold text-xl text-blue-600">Ljungqvist</span>
