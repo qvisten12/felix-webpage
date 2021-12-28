@@ -21,10 +21,30 @@ export const content = {
         codelink: "https://github.com/qvisten12/yutu-weather",
       },
     },
-
     {
       index: 1,
       slug: 2,
+      data: {
+        title: "Shareify",
+        date: 2022,
+        services: ["Front & back-end development"],
+        tech: ["SiReact", "SiJavascript", "SiHtml5", "SiTailwindcss"],
+        featuredImg: "/images/shareify/shareify-preview.png",
+        infoImages: [
+          "/images/shareify/shareify1.png",
+          "/images/shareify/shareify2.png",
+          "/images/shareify/shareify3.png",
+          "/images/shareify/shareify4.png",
+        ],
+        info: "Created using React, this is a fullfledged social media app. This app supports new posts with image upload, user login and registration. Backend created using sanity.io.",
+        link: "https://shareify-jade.vercel.app",
+        codelink: "https://github.com/qvisten12/shareify_frontend",
+      },
+    },
+
+    {
+      index: 2,
+      slug: 3,
       data: {
         title: "Component Library",
         date: 2021,
@@ -38,8 +58,8 @@ export const content = {
       },
     },
     {
-      index: 2,
-      slug: 3,
+      index: 3,
+      slug: 4,
       data: {
         title: "Realtime Chat",
         date: 2021,
@@ -56,38 +76,23 @@ export const content = {
       },
     },
     // {
-    //   index: 3,
-    //   slug: 4,
+    //   index: 4,
+    //   slug: 5,
     //   data: {
-    //     title: "Covid Tracker",
+    //     title: "Web-shop demo",
     //     date: 2021,
     //     services: ["Front-end development"],
     //     tech: ["SiReact", "SiJavascript", "SiHtml5"],
-    //     featuredImg: "/images/covid/covid-preview.png",
-    //     infoImages: ["/images/covid/covid1.png", "/images/covid/covid2.png"],
-    //     info: "This app was made using React and uses an API from covid19.mathdro.id to get covid-19 related information. Each time the app is ran, a fetch of the newest covid-19 information is retrieved from the API. Aswell as when a new country is selected in the drop-down menu.",
-    //     link: "https://covid-tracking-app.vercel.app",
-    //     codelink: "https://github.com/qvisten12/covid-tracking-app",
+    //     featuredImg: "/images/web-shop/web-shop-preview.png",
+    //     infoImages: [
+    //       "/images/web-shop/web-shop3.png",
+    //       "/images/web-shop/web-shop2.png",
+    //       "/images/web-shop/web-shop1.png",
+    //     ],
+    //     info: "Made with React and uses commerceJS API to store cart information and stripe to handle checkout and payment.",
+    //     link: "https://web-shop-tau.vercel.app",
+    //     codelink: "https://github.com/qvisten12/web-shop",
     //   },
     // },
-    {
-      index: 3,
-      slug: 4,
-      data: {
-        title: "Web-shop demo",
-        date: 2021,
-        services: ["Front-end development"],
-        tech: ["SiReact", "SiJavascript", "SiHtml5"],
-        featuredImg: "/images/web-shop/web-shop-preview.png",
-        infoImages: [
-          "/images/web-shop/web-shop3.png",
-          "/images/web-shop/web-shop2.png",
-          "/images/web-shop/web-shop1.png",
-        ],
-        info: "Made with React and uses commerceJS API to store cart information and stripe to handle checkout and payment.",
-        link: "https://web-shop-tau.vercel.app",
-        codelink: "https://github.com/qvisten12/web-shop",
-      },
-    },
   ],
 };

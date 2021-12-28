@@ -53,7 +53,7 @@ const ProjectCard = ({
               </li>
             ))}
           </div>
-          <div className="transform origin-left scale-90 md:scale-100 mt-4 -ml-1 md:ml-0 md:mt-auto md:flex">
+          <div className="flex transform origin-left scale-90 md:scale-100 mt-4 -ml-1 md:ml-0 md:mt-auto md:flex">
             {tech.map((t, i) => {
               if (t === "SiReact")
                 return (
