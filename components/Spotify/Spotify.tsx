@@ -35,7 +35,11 @@ const Spotify = () => {
           </div>
 
           <div className="flex-1">
-            {data?.isPlaying ? <p className="font-bold">Now Playing:</p> : ""}
+            {data?.isPlaying ? (
+              <p className="font-bold">I&apos;m Listening to:</p>
+            ) : (
+              ""
+            )}
             <p className="font-semibold text-sm">
               {data?.isPlaying ? data.title : "Not Listening"}
             </p>
