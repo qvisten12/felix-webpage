@@ -41,10 +41,29 @@ export const content = {
         codelink: "https://github.com/qvisten12/shareify_frontend",
       },
     },
-
     {
       index: 2,
       slug: 3,
+      data: {
+        title: "HackerScroller",
+        date: 2022,
+        services: ["Front-end development"],
+        tech: ["SiReact", "SiJavascript", "SiHtml5", "SiTailwindcss"],
+        featuredImg: "/images/hackerscroller/hackerscroller-preview.png",
+        infoImages: [
+          "/images/hackerscroller/hackerscroller1.png",
+          "/images/hackerscroller/hackerscroller2.png",
+          "/images/hackerscroller/hackerscroller3.png",
+        ],
+        info: "Created using React and TailwindCSS. This app gets the latest top stories from the hackernews API, allows you to get direct links to comments, content and the ability to filter stories on read/unread.",
+        link: "https://hackerscroller.vercel.app",
+        codelink: "https://github.com/qvisten12/hackerscroller",
+      },
+    },
+
+    {
+      index: 3,
+      slug: 4,
       data: {
         title: "Component Library",
         date: 2021,
@@ -58,8 +77,8 @@ export const content = {
       },
     },
     {
-      index: 3,
-      slug: 4,
+      index: 4,
+      slug: 5,
       data: {
         title: "Realtime Chat",
         date: 2021,
