@@ -21,29 +21,29 @@ export const content = {
         codelink: "https://github.com/qvisten12/yutu-weather",
       },
     },
+    // {
+    //   index: 1,
+    //   slug: 2,
+    //   data: {
+    //     title: "Shareify",
+    //     date: 2022,
+    //     services: ["Front & back-end development"],
+    //     tech: ["SiReact", "SiJavascript", "SiHtml5", "SiTailwindcss"],
+    //     featuredImg: "/images/shareify/shareify-preview.png",
+    //     infoImages: [
+    //       "/images/shareify/shareify1.png",
+    //       "/images/shareify/shareify2.png",
+    //       "/images/shareify/shareify3.png",
+    //       "/images/shareify/shareify4.png",
+    //     ],
+    //     info: "Created using React, this is a fullfledged social media app. This app supports new posts with image upload, user login and registration. Backend created using sanity.io.",
+    //     link: "https://shareify-jade.vercel.app",
+    //     codelink: "https://github.com/qvisten12/shareify_frontend",
+    //   },
+    // },
     {
       index: 1,
       slug: 2,
-      data: {
-        title: "Shareify",
-        date: 2022,
-        services: ["Front & back-end development"],
-        tech: ["SiReact", "SiJavascript", "SiHtml5", "SiTailwindcss"],
-        featuredImg: "/images/shareify/shareify-preview.png",
-        infoImages: [
-          "/images/shareify/shareify1.png",
-          "/images/shareify/shareify2.png",
-          "/images/shareify/shareify3.png",
-          "/images/shareify/shareify4.png",
-        ],
-        info: "Created using React, this is a fullfledged social media app. This app supports new posts with image upload, user login and registration. Backend created using sanity.io.",
-        link: "https://shareify-jade.vercel.app",
-        codelink: "https://github.com/qvisten12/shareify_frontend",
-      },
-    },
-    {
-      index: 2,
-      slug: 3,
       data: {
         title: "HackerScroller",
         date: 2022,
@@ -62,8 +62,8 @@ export const content = {
     },
 
     {
-      index: 3,
-      slug: 4,
+      index: 2,
+      slug: 3,
       data: {
         title: "Component Library",
         date: 2021,
@@ -77,8 +77,8 @@ export const content = {
       },
     },
     {
-      index: 4,
-      slug: 5,
+      index: 3,
+      slug: 4,
       data: {
         title: "Realtime Chat",
         date: 2021,
