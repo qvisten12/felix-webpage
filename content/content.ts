@@ -1,4 +1,24 @@
-export const content = {
+interface Project {
+  index: number;
+  slug: number;
+  data: {
+    title: string;
+    date: number;
+    services: string[];
+    tech: string[];
+    featuredImg: string;
+    infoImages: string[];
+    info: string;
+    link: string;
+    codelink: string;
+  };
+}
+
+interface Projects {
+  projects: Project[];
+}
+
+export const content: Projects = {
   projects: [
     {
       index: 0,
@@ -94,24 +114,5 @@ export const content = {
         codelink: "https://github.com/qvisten12/chat-app",
       },
     },
-    // {
-    //   index: 4,
-    //   slug: 5,
-    //   data: {
-    //     title: "Web-shop demo",
-    //     date: 2021,
-    //     services: ["Front-end development"],
-    //     tech: ["SiReact", "SiJavascript", "SiHtml5"],
-    //     featuredImg: "/images/web-shop/web-shop-preview.png",
-    //     infoImages: [
-    //       "/images/web-shop/web-shop3.png",
-    //       "/images/web-shop/web-shop2.png",
-    //       "/images/web-shop/web-shop1.png",
-    //     ],
-    //     info: "Made with React and uses commerceJS API to store cart information and stripe to handle checkout and payment.",
-    //     link: "https://web-shop-tau.vercel.app",
-    //     codelink: "https://github.com/qvisten12/web-shop",
-    //   },
-    // },
   ],
 };
