@@ -8,7 +8,7 @@ const Spotify = () => {
   const { data } = useSWR("/api/spotify", fetcher);
   return (
     <>
-      <div className="flex items-center justify-center md:w-full ">
+      <div className="flex items-center justify-center md:w-full">
         <a
           target="_blank"
           rel="noopener noreferrer"
